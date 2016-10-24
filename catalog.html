@@ -8,48 +8,64 @@
         <div class='page-header'>
             
             <div class='header-top'>
+                
                 <a href='#'><img scr='img/' alt='Gllacy Shop' width='205' height='55'></a>
+                
                 <ul class='header-menu'>
                     <li><a hreh='#'>Каталог</a></li>
                     <li><a hreh='#'>Доставка и оплата</a></li>
                     <li><a hreh='#'>О Компании</a></li>
                 </ul>
+                
                 <form action='#' method='post'>
-                    <input type='text' name='' value='поиск' id='search'>
-                    <a class='login' href='#'>Вход</a>
-                    <a class='basket' href='#'>Корзина</a>
+                    
+                    <div class='search-block'>
+                        <a class='search' href='#'>Поиск</a>
+                    </div>
+            
+                    <div class='login-block'>
+                        <a class='login' href='#'>Вход</a>
+                    </div>
+                    
+                    <div class='basket-block'>
+                        <a class='basket' href='#'>Корзина</a>
+                    </div>
+                    
                 </form>
+                
                 <p class='time'>С 10 до 20, ежедневно</p>
                 <p class='number'>8 812 450-25-25</p>
                  <!---кнопки, дата, телефон--->
+
             </div>
             
         </div>    
             
             <!-----Главная &raquo Каталог &raquo Сливочное---->
-            <div classs='content'>
-            
-                <div class='structure'>
-                    <a href='#home'>Главная</a>
-                    <span>&#187;</span>
-                    <a href='#catalog'>Каталог</a>
-                    <span>&#187;</span>
-                    <a href='#creamy'>Сливочное</a>
+                <div class='breadcrumbs'>
+                    <ul>
+                        <li><a href='#home'>Главная</a></li>
+                        <li><a href='#catalog'>Каталог</a></li>
+                        <li>Сливочное</li>
+                    </ul>
                 </div>
-
+        
+                <h1>Сливочное мороженое</h1>
+        
                 <div class='panel'>
-                    <h1>Сливочное мороженое</h1>
-                        <form action='#' method='post'>
-                            <div class='panel-sorting'>   
-                                <p>Сортировка:</p>
-                                    <select name='sorting'>
-                                        <option value='popularity'>По популярности</option>
-                                        <option value='novelty'>Новинка</option>
-                                        <option value='stock'>Акция</option>
-                                        <option value='decrease'>По убыванию</option>
-                                        <option value='increase'>По возрастанию</option>
-                                    </select>
-                </div>
+                    
+                    <form action='#' method='post'>
+                        
+                        <div class='panel-sorting'>   
+                            <p>Сортировка:</p>
+                                <select name='sorting'>
+                                    <option value='popularity'>По популярности</option>
+                                    <option value='novelty'>Новинка</option>
+                                    <option value='stock'>Акция</option>
+                                    <option value='decrease'>По убыванию</option>
+                                    <option value='increase'>По возрастанию</option>
+                                </select>
+                        </div>
 
                                  <!-----цена ползунок---->
                         <div class='price'></div>
@@ -75,9 +91,10 @@
 
                         </form>
                 </div>
-
+        
+                <!-------каталог мороженого------>
                 <div class='popular'>
-                    
+ 
                     <div class='popular-catalog'>
                         <!--тут будет основная картинка + хит CSS--> 
                         <div class='hit'>310 Р/кг</div>>
@@ -154,17 +171,20 @@
 
                 <!---страницы 1,2,3,4--->
                 <div class='item-list'>
-                    <a href='#prev'>&#60;</a>
-                    <a href='#1'>1</a>
-                    <a href='#2'>2</a>
-                    <a href='#3'>3</a>
-                    <a href='#4'>4</a>
-                    <a href='#5'>5</a>
-                    <a href='#next'>&#62;</a>
+                    <ul>
+                        <li><a href='#prev'>&#60;</a></li>
+                        <li>1</li>
+                        <li><a href='#2'>2</a></li>
+                        <li><a href='#3'>3</a></li>
+                        <li><a href='#4'>4</a></li>
+                        <li><a href='#5'>5</a></li>
+                        <li><a href='#next'>&#62;</a></li>
+                    </ul>
                 </div>
                 
         </div>
         
+        !------подвал--->
         <div class='footer'>
             <section class='footer-social'>
                 <a class='Twitter' href='#'><img src='#' alt='Twitter'></a>
