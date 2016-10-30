@@ -1,1 +1,116 @@
-.header-menu {}
+html, body{
+    font-family: Robot Bold, sans-serif;
+    color: #ffffff;
+    background: #849d8f;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+  border: 2px solid black;
+}
+.header-top {
+  min-height: 113px;
+
+  border: 2px solid #5e1cb8;
+}
+.header-top img{
+  width: 154px;
+  height: 64px;
+  float: left;
+  border: 2px solid #2af209;
+}
+.header-menu li{
+  display: inline-block;
+  margin-left: 27px;
+  border: 2px solid #2af209;
+}
+.panel{
+  float: right;
+  margin-top: 10px;
+  margin-right: 27px;
+  margin-bottom: 20px;
+  border: 2px solid #df18c1;
+}
+.basket-block{
+  display: inline-block;
+  margin-right:10px ;
+  border: 2px solid #2af209;
+}
+.login-block{
+  display: inline-block;
+  border: 2px solid #2af209;
+}
+.search-block{
+  display: inline-block;
+  border: 2px solid #2af209;
+}
+.time-number{
+  clear: both;
+  width: 165px;
+  margin-right: 27px;
+  border: 2px solid #2af209;
+}
+p .time{
+  font-size: 14px;
+}
+p .number{
+  font-size: 22px;
+}
+.content{
+   border: 2px solid #df18c1;
+}
+.present{
+  min-height: 230px;
+  border: 2px solid #d2fb14;
+}
+.present-raspberries{
+  display: inline-block;
+  width: 560px;
+  margin-left: 27px;
+  background-image: url(img/crimson_background.png);
+  border: 2px solid #fb7014;
+}
+.present-chokolad{
+  display: inline-block;
+  width: 560px;
+  margin-right: 27px;
+  background-image: url(img/chocolate_background.png);
+  border: 2px solid #fb7014;
+}
+.popular{
+  border: 2px solid #fb7014;
+}
+.popular-catalog{
+  display: inline-block;
+  width: 267px;
+  border: 2px solid #1460fb;
+}
+.quality{
+    border: 2px solid #1460fb;
+}
+.quality-score{
+  float: left;
+  width: 1151px;
+  border: 2px solid #14ddfb;
+}
+.score-left{
+  float: left;
+  width: 465px;
+  border: 2px solid #14ddfb;
+}
+.score-right{
+  float: right;
+  width: 465px;
+  border: 2px solid #14ddfb;
+}
+
+.news{
+  clear: both;
+  border: 2px solid #fb2414;
+}
+.map-wrap{
+  border: 2px solid #14ddfb;
+}
+.footer{
+  border: 2px solid #d8fb14;
+}
