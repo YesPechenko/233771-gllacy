@@ -62,13 +62,18 @@ html, body{
 .time-number{
   float: right;
   width: 165px;
+  margin-right: 27px;
   background-color: #2af209;
 }
 .time{
   font-size: 14px;
+  line-height: 16px;
+  text-align: right;
 }
 .number{
   font-size: 22px;
+  line-height: 24px;
+  text-align: right;
 }
 .clear{
   clear: both;
