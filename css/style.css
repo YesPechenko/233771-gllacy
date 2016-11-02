@@ -10,11 +10,11 @@ html, body{
 .container {
   width: 1200px;
   margin: auto;
-  border: 2px solid black;
+  background-color: black;
 }
 .page-header {
   margin-bottom: 40px;
-  border: 2px solid #14ddfb;
+  background-color: #14ddfb;
 }
 .clearfix::after {
   content: "";
@@ -25,44 +25,44 @@ html, body{
 
 .header-top ul {
   display: inline-block;
-  border: 2px solid #5e1cb8;
+  background-color: #5e1cb8;
 }
 .header-top img{
   width: 154px;
   height: 64px;
   float: left;
-  border: 2px solid #2af209;
+  background-color: #2af209;
 }
 .header-menu li {
   display: inline-block;
   color: white;
   margin-left: 27px;
-  border: 2px solid #2af209;
+  background-color: #2af209;
 }
 .panel{
   float: right;
   margin-top: 10px;
   margin-right: 27px;
   margin-bottom: 20px;
-  border: 2px solid #df18c1;
+  background-color: #df18c1;
 }
 .basket-block{
   display: inline-block;
   margin-right:10px ;
-  border: 2px solid #2af209;
+  background-color: #2af209;
 }
 .login-block{
   display: inline-block;
-  border: 2px solid #2af209;
+  background-color: #2af209;
 }
 .search-block{
   display: inline-block;
-  border: 2px solid #2af209;
+  background-color: #2af209;
 }
 .time-number{
   float: right;
   width: 165px;
-  border: 2px solid #2af209;
+  background-color: #2af209;
 }
 .time{
   font-size: 14px;
@@ -75,11 +75,11 @@ html, body{
 }
 .content{
   margin-bottom: 40px;
-   border: 2px solid #df18c1;
+  background-color: #df18c1;
 }
 .present{
   margin-bottom: 40px;
-  border: 2px solid #d2fb14;
+  background-color: #d2fb14;
 }
 .present-raspberries{
   float: left;
@@ -89,7 +89,7 @@ html, body{
   padding-right: 30px;
   padding-bottom: 22px;
   margin-left: 27px;
-  border: 2px solid #fb7014;
+  background-color: #fb7014;
   background: url('../img/crimson_background.png') ;
   background-size: 560px 229px;
 }
@@ -122,7 +122,7 @@ html, body{
   padding-right: 30px;
   padding-bottom: 22px;
   margin-right: 27px;
-  border: 2px solid #fb7014;
+  background-color: #fb7014;
   background-image: url('../img/chocolate_background.png');
   background-size: 560px 229px;
 }
@@ -149,7 +149,7 @@ html, body{
 }
 .popular{
   margin-bottom: 40px;
-  border: 2px solid #fb7014;
+  background-color: #fb7014;
 }
 .popular a{
   display: inline-block;
@@ -158,7 +158,7 @@ html, body{
   padding: 0;
   margin: 0;
   color: #fff;
-  border: 2px solid #df18c1;
+  background-color: #df18c1;
 }
 .popular-catalog1{
   float:left;
@@ -166,20 +166,20 @@ html, body{
   margin-left: 27px;
   margin-right: 26px;
   background-image: url('../img/1.png');
-  border: 2px solid #1460fb;
+  background-color: #1460fb;
 }
 .popular-catalog2{
   float:left;
   width: 267px;
   margin-right: 26px;
   background-image: url('../img/2.png');
-  border: 2px solid #1460fb;
+  background-color: #1460fb;
 }
 .popular-catalog3{
   float:left;
   width: 267px;
    background-image: url('../img/3.png');
-  border: 2px solid #1460fb;
+  background-color: #1460fb;
 }
 .popular-catalog4{
   float: right;
@@ -187,7 +187,7 @@ html, body{
   margin-left: 26px;
   margin-right: 27px;
   background-image: url('../img/4.png');
-  border: 2px solid #1460fb;
+  background-color: #1460fb;
 }
 
 .quality{
@@ -197,13 +197,13 @@ html, body{
   margin-bottom: 40px;
   background-image: url('../img/background_SEO.jpg');
   background-size: 1146px 306px;
-  border: 2px solid #1460fb;
+  background-color: #1460fb;
 }
 .quality-score{
   display:inline-block;
   font-size: 24px;
   line-height: 30px;
-  border: 2px solid #14ddfb;
+  background-color: #14ddfb;
 }
 .score-left{
   float: left;
@@ -212,7 +212,7 @@ html, body{
   line-height: 22px;
   margin-left: 21px;
   margin-right: 26px;
-  border: 2px solid #14ddfb;
+  background-color: #14ddfb;
 }
 .score-right{
   c
@@ -220,12 +220,12 @@ html, body{
   font-size: 16px;
   line-height: 22px;
   margin-right: 33px;
-  border: 2px solid #14ddfb;
+  background-color: #14ddfb;
 }
 
 .news{
   margin-bottom: 40px;
-  border: 2px solid #fb2414;
+  background-color: #fb2414;
 }
 .news-current{
   float: left;
@@ -235,7 +235,7 @@ html, body{
   padding-right: 30px;
   padding-bottom: 22px;
   margin-left: 27px;
-  border: 2px solid #fb7014;
+  background-color: #fb7014;
   background: url('../img/strawberry_background.png') ;
   background-size: 560px 229px;
   }
@@ -264,7 +264,7 @@ html, body{
   padding-right: 30px;
   padding-bottom: 22px;
   margin-right: 27px;
-  border: 2px solid #fb7014;
+  background-color: #fb7014;
   background-image: url('../img/the_mail_background.png');
   background-size: 560px 229px;
   }
@@ -296,46 +296,59 @@ html, body{
 
 .map-wrap{
   margin-bottom: 40px;
-  border: 2px solid #14ddfb;
+  background-color: #14ddfb;
 }
 .footer{
-    border: 2px solid #d8fb14;
+  background-color: #d8fb14;
 }
 .footer-social{
   display: inline-block;
+  margin-left: 27px;
   padding-top: 36px;
-  padding-left: 27px;
+  background-color: #df18c1;
 }
 .twitter{
-  background-image: url('../img/twitter.svg');
   background-size: 37px 37px;
 }
 .instagram{
-  background-image: url('../img/instagram.svg');
   background-size: 37px 37px;
 }
 .facebook{
-  background-image: url('../img/facebook.svg');
-  background-size: 37px 37px;
+   background-size: 37px 37px;
 }
 .vkontakte{
-  background-image: url('../img/vk.svg');
   background-size: 37px 37px;
 }
 .footer-menu{
   display: inline-block;
-  margin-left: ;
-  background-image: url('../img/');
-  border: 2px solid #14ddfb;
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 214px ;
+  background-color: #14ddfb;
 }
 .block1{
-    float: left;
-  border: 2px solid #14ddfb;
+  float: left;
+  width: 113px;
+  background-color: #14ddfb;
   }
 .block2{
   float: right;
-  border: 2px solid #14ddfb;
+  width: 162px;
+  background-color: #14ddfb;
+}
+.html-academ{
+  float: right;
+  width: 215px;
+  background-color:#df18c1;
 }
 .footer-academ{
-  display: inline-block;
+  padding-top: 19px;
+  margin-right: 107px;
+  background-color: #ef5f3f;
+}
+.html-academ p{
+  color: white;
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #ef5f3f;
 }
