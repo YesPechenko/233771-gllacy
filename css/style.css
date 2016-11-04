@@ -14,6 +14,7 @@ html, body{
   background-color: black;
 }
 .page-header {
+  padding: 0;
   background-color: #14ddfb;
 }
 .clearfix::after {
@@ -21,52 +22,73 @@ html, body{
   display: table;
   clear: both;
 }
-.header-top img{
-  float: left;
-  width: 154px;
-  margin-left: 27px;
+.page-header img{
+  display: inline-block;
+  padding: 0;
   margin-top: 9px;
+  margin-left: 27px;
   background-color: #2af209;
 }
-.header-top ul {
-  float: left;
-  margin-top: 31px;
+.header-menu {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 0;
+  list-style: none;
+  vertical-align: top;
+  margin-top: 32px;
+  background-color: #5e1cb8;
+}
+.header-menu ul {
+  display: inline-block;
+  margin: 0;
   padding: 0;
   list-style: none;
   font-size: 0;
-  background-color: #5e1cb8;
 }
-
 .header-menu li {
-  float: left;
+  display: inline-block;
   font-size: 16px;
   line-height: 20px;
-  margin-left: 27px;
-  vertical-align: top;
+
+
   background-color: #2af209;
 }
 .header-menu a{
-  color: #ffffff;
-  text-decoration: none;
+   padding-right: 26px;
+   color: #ffffff;
+   text-decoration: none;
+ }
+.header-menu a :hover {
+  background: #242424;
 }
-.search-login-basket{
-  float: right;
+.search-login-basket {
+  display: inline-block;
+  vertical-align: top;
   margin-top: 23px;
-  margin-right: 27px;
-  margin-bottom: 20px;
+  margin-left: 332px;
   background-color: #df18c1;
 }
 .basket-block{
   display: inline-block;
-  margin-right:10px ;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-right: 10px;
   background-color: #2af209;
 }
 .login-block{
   display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  margin-right: 10px
   background-color: #2af209;
 }
 .search-block{
   display: inline-block;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
   background-color: #2af209;
 }
 .time-number{
@@ -176,9 +198,13 @@ html, body{
   width: 267px;
   text-align: center;
   margin-bottom: 55px;
-
+  margin-right: 26px;
 }
-.product-img{
+.popular-product:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-img {
   width: 267px;
 }
 .product-price{
@@ -229,6 +255,7 @@ html, body{
 .news-current{
   float: left;
   width: 560px;
+  min-height: 228px;
   padding-top: 23px;
   padding-left: 20px;
   padding-right: 30px;
@@ -248,19 +275,17 @@ html, body{
   border-left-color: #d8fb14;
 }
 .news-current-name {
-  float: left;
-  width: 283px;
+  width: 300px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
-  padding-left: 20px;
   color: #323232;
-  background-color: #849d8f;
 }
 
 .news-letter {
   float: right;
   width: 560px;
+  min-height: 228px;
   padding-top: 23px;;
   padding-left: 20px;
   padding-right: 30px;
@@ -343,36 +368,58 @@ html, body{
   width: 1200px;
   background-color: #14ddfb;
 }
+.panel-top{
+  display: inline-block;
+}
 .panel-sorting{
-  float: left;
+  display: inline-block;
   width: 193px;
   margin-left: 27px;
 
   background-color: #df18c1;
 }
 .panel-price{
-  float: left;
+  display: inline-block;
   width: 218px;
   background-color: #5e1cb8;
 }
 .panel-fatness{
-  float:right;
+  display: inline-block;
   width: 415px;
   margin-right: 316px;
   background-color: #d8fb14;
 
 }
+.panel-botton{
+  display: inline-block;
+}
 .panel-filler{
-  float: left;
+  display: inline-block;
   width: 702px;
   margin-left: 27px;
   background-color: #849d8f;
 }
 .panel-apply{
-  float: right;
+  display: inline-block;
   width: 144px;
   margin-right: 313px;
-  background-color: #ef5f3f;b
+  background-color: #ef5f3f;
+}
+.item-list{
+  display: inline-block;
+  width: 188px;
+  margin-top: 83px;
+  margin-left: 985px;
+  margin-bottom: 30px;
+  text-align: right;
+  white-space: nowrap;
+  background-color: #ef5f3f;
+}
+.item-list a,
+.item-list span{
+  display: inline-block;
+  padding-left: 11px;
+  text-decoration: none;
 }
 .footer{
   padding-top: 36px;
@@ -380,13 +427,13 @@ html, body{
   background-color: #d8fb14;
 }
 .footer-social{
-  float: left;
+  display: inline-block;
   width: 186px;
   margin-left: 27px;
   margin-right: 214px;
   font-size: 0;
-  vertical-align: top;
   text-decoration: none;
+  vertical-align: top;
 }
 .twitter{
   padding-right: 12px;
@@ -405,18 +452,39 @@ html, body{
   background-size: 37px 37px;
 }
 .footer-menu{
-  float: left;
-  width: 327px;
+  display: inline-block;
   margin: 0;
   padding: 0;
-  list-style: none;
+  vertical-align: top;
 }
-.footer-menu a{
+.footer-menu ul{
+  display: inline-block;
+  width: 325px;
+ }
+.footer-menu li{
+  display: inline-block;
+  margin-bottom: 10px;
   font-size: 13px;
   line-height: 18px;
+}
+.footer-menu a{
+  text-decoration: none;
   color: #ffffff;
 }
 
+.footer-menu-left{
+  display: inline-block;
+  width: 162px;
+}
+.footer-menu-right{
+  display: inline-block;
+  width: 162px;
+}
+.html-academ{
+  display: inline-block;
+  margin-left: 230px;
+  margin-top: -17px;
+}
 .footer-academ{
   float: right;
   width: 189px;

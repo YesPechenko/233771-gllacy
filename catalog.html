@@ -10,20 +10,16 @@
     <div class='container'>
 
       <div class='page-header clearfix'>
+           <a href='#'><img src='img/main-logo.svg' alt='Gllacy Shop' width='155' height='64'></a>
 
-        <div class='header-top'>
+            <div class='header-menu'>
+              <ul>
+                <li><a href='#'>Каталог</a></li>
+                <li><a href='#'>Доставка и оплата</a></li>
+                <li><a href='#'>О Компании</a></li>
+            </div>
 
-          <div class='header-top-string'>
-
-                <a href='#'><img src='img/main-logo.svg' alt='Gllacy Shop' width='155' height='64'></a>
-
-            <ul class='header-menu'>
-              <li><a href='#'>Каталог</a></li>
-              <li><a href='#'>Доставка и оплата</a></li>
-              <li><a href='#'>О Компании</a></li>
-            </ul>
-
-            <div class='panel'>
+            <div class='search-login-basket'>
 
               <form action='#' method='post'>
 
@@ -43,15 +39,10 @@
 
             </div>
 
-          </div>
-
           <div class='time-number'>
             <p class='time'>С 10 до 20, ежедневно</p>
             <p class='number'>8 812 450-25-25</p>
           </div>
-          <!---кнопки, дата, телефон--->
-
-        </div>
 
       </div>
 
@@ -76,6 +67,7 @@
 
                     <form action='#' method='post'>
 
+                      <div class='panel-top'>
                             <div class='panel-sorting'>
                                 <p>Сортировка:</p>
                                     <select name='sorting'>
@@ -97,8 +89,9 @@
                                     <input type='radio' name='question-one' value='0'> до 30%
                                     <input type='radio' name='question-one' value='0'> выше 30%
                             </div>
+                      </div>
 
-
+                      <div class='panel-botton'>
                             <div class='panel-filler'>
                                  <p>Наполнитель:</p>
                                  <input type='checkbox' name='filler' value='chocolate'> Шоколадные
@@ -111,8 +104,9 @@
                               <div class='panel-apply'>
                                 <input type='submit' value='Применить'>
                               </div>
+                      </div>
 
-                        </form>
+                    </form>
                 </div>
 
                 <!-------каталог мороженого------>
@@ -217,16 +211,15 @@
                 </div>
 
                 <!---страницы 1,2,3,4--->
-                <div class='item-list clearfix'>
-                    <ul>
-                        <li><a href='#prev'>&#60;</a></li>
-                        <li>1</li>
-                        <li><a href='#2'>2</a></li>
-                        <li><a href='#3'>3</a></li>
-                        <li><a href='#4'>4</a></li>
-                        <li><a href='#5'>5</a></li>
-                        <li><a href='#next'>&#62;</a></li>
-                    </ul>
+                <div class='item-list'>
+                        <a href='#prev'>&#60;</a>
+                        <span>1</span>
+                        <a href='#2'>2</a>
+                        <a href='#3'>3</a>
+                        <a href='#4'>4</a>
+                        <a href='#5'>5</a>
+                        <a href='#next'>&#62;</a>
+
                 </div>
 
 
@@ -241,10 +234,15 @@
 
         <ul class='footer-menu'>
 
-          <li class='block1 '><a href='#'>Для поставщиков</a></li>
-          <li class='block1'><a href='#'>О производстве</a></li>
-          <li class='block2'><a href='#'>Наши документы</a></li>
-          <li class='block2'><a href='#'>Экологические стандарты</a></li>
+          <div class='footer-menu-left'>
+            <li class='block1 '><a href='#'>Для поставщиков</a></li>
+            <li class='block1'><a href='#'>О производстве</a></li>
+          </div>
+
+          <div class='footer-menu-right'>
+            <li class='block2'><a href='#'>Наши документы</a></li>
+            <li class='block2'><a href='#'>Экологические стандарты</a></li>
+          </div>
 
         </ul>
 
