@@ -9,39 +9,49 @@ html, body{
 }
 .container {
   width: 1200px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: black;
 }
 .page-header {
-  margin-bottom: 40px;
   background-color: #14ddfb;
 }
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
-
+.header-top img{
+  float: left;
+  width: 154px;
+  margin-left: 27px;
+  margin-top: 9px;
+  background-color: #2af209;
+}
 .header-top ul {
-  display: inline-block;
+  float: left;
+  margin-top: 31px;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
   background-color: #5e1cb8;
 }
-.header-top img{
-  width: 154px;
-  height: 64px;
-  float: left;
-  background-color: #2af209;
-}
+
 .header-menu li {
-  display: inline-block;
-  color: white;
+  float: left;
+  font-size: 16px;
+  line-height: 20px;
   margin-left: 27px;
+  vertical-align: top;
   background-color: #2af209;
 }
-.panel{
+.header-menu a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.search-login-basket{
   float: right;
-  margin-top: 10px;
+  margin-top: 23px;
   margin-right: 27px;
   margin-bottom: 20px;
   background-color: #df18c1;
@@ -62,6 +72,7 @@ html, body{
 .time-number{
   float: right;
   width: 165px;
+  margin-left: 1008px;
   margin-right: 27px;
   background-color: #2af209;
 }
@@ -75,10 +86,8 @@ html, body{
   line-height: 24px;
   text-align: right;
 }
-.clear{
-  clear: both;
-}
 .content{
+  margin-top: 40px;
   margin-bottom: 40px;
   background-color: #df18c1;
 }
@@ -97,6 +106,7 @@ html, body{
   background-color: #fb7014;
   background: url('../img/crimson_background.png') ;
   background-size: 560px 229px;
+  background-repeat: no-repeat;
 }
 .present-raspberries b {
   font-size: 35px;
@@ -107,12 +117,13 @@ html, body{
   line-height: 22px;
   margin-bottom: 35px;
 }
-.present-raspberries button{
+.present-raspberries a{
   display: inline-block;
   width: 165px;
   font-size: 18px;
   text-align:  center;
   padding: 10px 15px;
+  margin-left: 350px;
   border-radius: 19px;
   color: #fff;
   background-color: #ef5f3f;
@@ -130,6 +141,7 @@ html, body{
   background-color: #fb7014;
   background-image: url('../img/chocolate_background.png');
   background-size: 560px 229px;
+  background-repeat: no-repeat;
 }
 .present-chokolad b {
   font-size: 35px;
@@ -140,12 +152,13 @@ html, body{
   line-height: 22px;
   margin-bottom: 35px;
 }
-.present-chokolad button{
+.present-chokolad a{
   display: inline-block;
   width: 189px;
   font-size: 18px;
   text-align:  center;
   padding: 10px 15px;
+  margin-left: 325px;
   border-radius: 19px;
   color: #fff;
   background-color: #ef5f3f;
@@ -153,46 +166,26 @@ html, body{
   text-decoration: none;
 }
 .popular{
-  margin-bottom: 40px;
+  width: 1146px;
+  margin-left: 27px;
+  margin-right: 27px;
   background-color: #fb7014;
 }
-.popular a{
-  display: inline-block;
-  font-size: 16px;
-  line-height: 22px;
-  padding: 0;
-  margin: 0;
-  color: #fff;
+.popular-product{
+  float: left;
+  width: 267px;
+  text-align: center;
+  margin-bottom: 55px;
+
+}
+.product-img{
+  width: 267px;
+}
+.product-price{
+
+}
+.product-hit{
   background-color: #df18c1;
-}
-.popular-catalog1{
-  float:left;
-  width: 267px;
-  margin-left: 27px;
-  margin-right: 26px;
-  background-image: url('../img/1.png');
-  background-color: #1460fb;
-}
-.popular-catalog2{
-  float:left;
-  width: 267px;
-  margin-right: 26px;
-  background-image: url('../img/2.png');
-  background-color: #1460fb;
-}
-.popular-catalog3{
-  float:left;
-  width: 267px;
-   background-image: url('../img/3.png');
-  background-color: #1460fb;
-}
-.popular-catalog4{
-  float: right;
-  width: 267px;
-  margin-left: 26px;
-  margin-right: 27px;
-  background-image: url('../img/4.png');
-  background-color: #1460fb;
 }
 
 .quality{
@@ -200,8 +193,10 @@ html, body{
   margin-left: 27px;
   margin-right: 27px;
   margin-bottom: 40px;
+  border-radius: 13px;
   background-image: url('../img/background_SEO.jpg');
   background-size: 1146px 306px;
+  background-repeat: no-repeat;
   background-color: #1460fb;
 }
 .quality-score{
@@ -212,7 +207,7 @@ html, body{
 }
 .score-left{
   float: left;
-  width: 539px;
+  width: 532px;
   font-size: 16px;
   line-height: 22px;
   margin-left: 21px;
@@ -220,8 +215,7 @@ html, body{
   background-color: #14ddfb;
 }
 .score-right{
-  c
-  width: 525px;
+
   font-size: 16px;
   line-height: 22px;
   margin-right: 33px;
@@ -243,28 +237,31 @@ html, body{
   background-color: #fb7014;
   background: url('../img/strawberry_background.png') ;
   background-size: 560px 229px;
+  background-repeat: no-repeat;
   }
-.news-current p {
+.news-current span {
+  display: inline-block;
   font-size: 16px;
   line-height: 22px;
-  padding-top: 27px;
-  padding-left: 20px;
   padding-bottom: 16px;
   color: #323232;
+  border-left-color: #d8fb14;
 }
 .news-current-name {
+  float: left;
   width: 283px;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   padding-left: 20px;
   color: #323232;
+  background-color: #849d8f;
 }
 
 .news-letter {
   float: right;
   width: 560px;
-  padding-top: 23px;
+  padding-top: 23px;;
   padding-left: 20px;
   padding-right: 30px;
   padding-bottom: 22px;
@@ -272,23 +269,28 @@ html, body{
   background-color: #fb7014;
   background-image: url('../img/the_mail_background.png');
   background-size: 560px 229px;
-  }
-.news-letter p {
+  background-repeat: no-repeat;
+}
+
+.letter{
   font-size: 16px;
   line-height: 22px;
-  padding-top: 38px;
-  padding-left: 27px;
-  padding-bottom: 42px;
+  padding-top: 27px;
+  padding-bottom: 28px;
   color: #323232;
 }
+.text-submit{
+  float: left;
+}
 #email{
+  width: 368px;
   font-size: 16px;
   line-height: 22px;
 }
 
 .news-letter .submit{
   display: inline-block;
-  width: 165px;
+  width: 128px;
   font-size: 18px;
   text-align:  center;
   padding: 10px 15px;
@@ -303,57 +305,133 @@ html, body{
   margin-bottom: 40px;
   background-color: #14ddfb;
 }
+.breadcrumbs ul {
+  float: left;
+  width: 1200px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+  background-color: #5e1cb8;
+}
+.breadcrumbs li {
+  float: left;
+  width: auto;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 27px;
+  vertical-align: top;
+  background-color: #2af209;
+}
+.breadcrumbs a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.icecream h1 {
+  float: left;
+  width: 1200px;
+  font-size: 35px;
+  line-height: 41px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-top: 10px;
+  margin-bottom: 36px;
+  background-color: #fb2414;
+}
+
+.panel{
+  width: 1200px;
+  background-color: #14ddfb;
+}
+.panel-sorting{
+  float: left;
+  width: 193px;
+  margin-left: 27px;
+
+  background-color: #df18c1;
+}
+.panel-price{
+  float: left;
+  width: 218px;
+  background-color: #5e1cb8;
+}
+.panel-fatness{
+  float:right;
+  width: 415px;
+  margin-right: 316px;
+  background-color: #d8fb14;
+
+}
+.panel-filler{
+  float: left;
+  width: 702px;
+  margin-left: 27px;
+  background-color: #849d8f;
+}
+.panel-apply{
+  float: right;
+  width: 144px;
+  margin-right: 313px;
+  background-color: #ef5f3f;b
+}
 .footer{
+  padding-top: 36px;
+  padding-bottom: 25px;
   background-color: #d8fb14;
 }
 .footer-social{
-  display: inline-block;
+  float: left;
+  width: 186px;
   margin-left: 27px;
-  padding-top: 36px;
-  background-color: #df18c1;
+  margin-right: 214px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
 }
 .twitter{
+  padding-right: 12px;
   background-size: 37px 37px;
 }
 .instagram{
+  padding-right: 12px;
   background-size: 37px 37px;
 }
 .facebook{
-   background-size: 37px 37px;
+  padding-right: 12px;
+  background-size: 37px 37px;
 }
 .vkontakte{
+  padding-right: 12px;
   background-size: 37px 37px;
 }
 .footer-menu{
-  display: inline-block;
+  float: left;
+  width: 327px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-menu a{
   font-size: 13px;
   line-height: 18px;
-  margin-left: 214px ;
-  background-color: #14ddfb;
+  color: #ffffff;
 }
-.block1{
-  float: left;
-  width: 113px;
-  background-color: #14ddfb;
-  }
-.block2{
-  float: right;
-  width: 162px;
-  background-color: #14ddfb;
-}
-.html-academ{
-  float: right;
-  width: 215px;
-  background-color:#df18c1;
-}
+
 .footer-academ{
-  padding-top: 19px;
-  margin-right: 107px;
-  background-color: #ef5f3f;
+  float: right;
+  width: 189px;
 }
-.html-academ p{
+.footer-academ a{
+  margin-right: 107px;
+  margin-bottom: 15px;
+
+}
+.footer-academ span{
   color: white;
   font-size: 12px;
   line-height: 18px;
-  background-color: #ef5f3f;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
 }
+

@@ -23,7 +23,7 @@
           <li><a href='#'>О Компании</a></li>
         </ul>
 
-        <div class='panel'>
+        <div class='search-login-basket'>
 
           <form action='#' method='post'>
 
@@ -55,7 +55,7 @@
 
   </div>
 
-    <div class='content'> </div>
+    <div class='content clearfix'> </div>
 
       <!-- слайдер
       <b>Крем-брюле и пломбир с малиновым джемом</b>
@@ -70,7 +70,7 @@
           <form action='#' method='post'>
             <b>Малинка даром!</b>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <button type="submit" name='raspberries'>Хочу варенье!</button>
+            <a class='submit' href='#'>Хочу варенье!</a>
           </form>
 
         </div>
@@ -81,7 +81,7 @@
             <b>Шоколадки даром!</b>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно
               бесплатно.</p>
-            <button type='submit' name='chokolad'>Хочу шоколадки!</button>
+            <a class='submit' href='#'>Хочу шоколадки!</a>
           </form>
 
         </div>
@@ -89,25 +89,33 @@
       </div>
 
       <div class='popular clearfix' >
-        <div class='popular-catalog1'>
-          <!--тут будет основная картинка + хит CSS-->
-          <div class='hit'>310 Р/кг</div>
-          <a class='btn' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <div class='popular-product'>
+          <div class='product-img'>
+            <img src='img/1.png' alt='1' width='267' height='267'>
+          </div>
+            <p class='product-price'>310 Р/кг</p>
+            <a class='product-hit' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
-        <div class='popular-catalog2'>
-          <!--тут будет основная картинка + хит CSS-->
-          <div class='hit'>380 Р/кг</div>
-          <a class='btn' href='#'>Сливочно-кофейное с кусочками шоколада</a>
+        <div class='popular-product'>
+          <div class='product-img'>
+            <img src='img/2.png' alt='2' width='267' height='267'>
+          </div>
+            <p class='hit'>380 Р/кг</p>
+            <a class='product-hit' href='#'>Сливочно-кофейное с кусочками шоколада</a>
         </div>
-        <div class='popular-catalog3'>
-          <!--тут будет основная картинка + хит CSS-->
-          <div class='hit'>355 Р/кг</div>
-          <a class='btn' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <div class='popular-product'>
+          <div class='product-img'>
+            <img src='img/3.png' alt='3' width='267' height='267'>
+          </div>
+            <p class='hit'>355 Р/кг</p>
+            <a class='product-hit' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
-        <div class='popular-catalog4'>
-          <!--тут будет основная картинка + хит CSS-->
-          <div class='hit'>415 Р/кг</div>
-          <a class='btn' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
+        <div class='popular-product'>
+          <div class='product-img'>
+            <img src='img/4.png' alt='4' width='267' height='267'>
+          </div>
+            <p class='hit'>415 Р/кг</p>
+            <a class='product-hit' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </div>
 
@@ -132,16 +140,23 @@
     <div class='news clearfix'>
 
       <div class='news-current'>
-        <p>Новое в нашем блоке</p>
-        <a class='news-current-name' href='#'>10 способов сервировки <br> фруктовых щербетов к <br> столу</a>
+        <span>Новое в нашем блоке</span>
+          <div class='news-current-name'>
+            <a class='new' href='#'>10 способов сервировки <br> фруктовых щербетов к <br> столу</a>
+          </div>
       </div>
 
       <div class='news-letter'>
         <form action='#' method='post'>
-          <p>Подпишись на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <input type='text' name='Электронная почта' id='email'>
-          <input class='submit' type='submit' name='submit' value='Отправть'>
+          <div class='letter'>Подпишись на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+            Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+          </div>
+
+          <div class='text-submit'>
+            <input type='text' name='Электронная почта' id='email'>
+            <input class='submit' type='submit' name='submit' value='Отправть'>
+          </div>
+
         </form>
       </div>
 
@@ -175,7 +190,8 @@
 
 
 <!------подвал--->
-        <div class='footer'>
+        <div class='footer clearfix'>
+
           <section class='footer-social'>
             <a class='twitter' href='#'><img src='img/twitter.svg' alt='Twitter'></a>
             <a class='instagram' href='#'><img src='img/instagram.svg' alt='Instagram'></a>
@@ -183,24 +199,23 @@
             <a class='vkontakte' href='#'><img src='img/vk.svg' alt='Vkontakte'></a>
           </section>
 
-          <ul class='footer-menu'>
-              <div class='block1'>
-                <li><a href='#'>Для поставщиков</a></li>
-                <li><a href='#'>О производстве</a></li>
-              </div>
-              <div class='block2'>
-                <li><a href='#'>Наши документы</a></li>
-                <li><a href='#'>Экологические стандарты</a></li>
-              </div>
-          </ul>
+            <ul class='footer-menu'>
+
+                <li class='block1 '><a href='#'>Для поставщиков</a></li>
+                <li class='block1'><a href='#'>О производстве</a></li>
+                <li class='block2'><a href='#'>Наши документы</a></li>
+                <li class='block2'><a href='#'>Экологические стандарты</a></li>
+
+            </ul>
+
 
             <div class='html-academ'>
 
               <section class='footer-academ'>
                 <a href='#'><img src='img/logohtml.png' alt='html academy'></a>
+                <span> Сделано в HTML Academy 2016</span>
               </section>
 
-              <p> Сделано в HTML Academy 2016</p>
             </div>
 
           </div>
