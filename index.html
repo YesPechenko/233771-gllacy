@@ -12,7 +12,7 @@
 
   <div class='page-header clearfix'>
 
-      <img src='img/main-logo.svg' alt='Gllacy Shop' width='155' height='64'>
+      <img class='header-img' src='img/main-logo.svg' alt='Gllacy Shop' width='155' height='64'>
 
       <div class='header-menu'>
           <ul class='main-menu'>
@@ -29,55 +29,34 @@
           </ul>
       </div>
 
-        <div class='search-login-basket'>
+          <div class='header-right'>
 
-          <form action='#' method='post'>
+              <div class='header-search'>
+                <div class='header-search-icon'></div>
+                <div class='header-search-form'>
+                  <form action='#' method='post'>
+                    <input type='text' placeholder='Что ищем?' >
+                  </form>
+                </div>
+              </div>
 
-            <div class='search-block'>
-              <a class='search' href='#'>Поиск</a>
-              <input type='text' name='Поиск' id='search-field'>
-            </div>
-
-            <div class='login-block'>
-              <a class='login' href='#'>Вход</a>
-                  <div class='entry field'>
-                    <label for='login-field'>Электронная почта</label>
-                    <input type='text' name='login' id='login-field'>
-
-                    <label for='password-field'>Пароль</label>
-                    <input type='text' name='password' id='password-field'>
-
-                    <button class='login-button' type='submit'>Вход</button>
-
+              <div class='header-login'>
+                <a href='#' class='header-login-icon'>Вход</a>
+                <div class='header-login-form'>
+                  <form action='#' method='post'>
+                    <input type='text' name='login' id='login' placeholder='Электонная почта' >
+                    <input type='text' name='password' id='password'  placeholder='Пароль'>
+                    <button class='login-button' type='submit'>Войти</button>
                     <a class='forgot-password' href='#'>Забыли пароль?</a>
                     <a class='new-registration' href='#'>Новая регистрация</a>
-                  </div>
-            </div>
-
-            <div class='basket-block'>
-              <a class='basket' href='#'>Корзина</a>
-                <div class='products-cart'>
-                    <div class='product-cart1'>
-                      <span>Пломбир с апельсиновым джемом</span>
-                      <span>1,5 кг х 200 руб.</span>
-                      <span>300 руб.</span>
-                    </div>
-                    <div class='product-cart2'>
-                      <span>Клубничный пломбир с присыпкой из белого шоколада</span>
-                      <span>1,5 кг х 200 руб.</span>
-                      <span>450 руб.</span>
-                    </div>
-                    <div class='cart-result'>
-                      <span>Итого: 750 руб.</span>
-                      <a class='checkout' href='#'>Оформить заказ</a>
-                    </div>
+                  </form>
                 </div>
-            </div>
+              </div>
 
-          </form>
-
-      </div>
-
+              <div class='header-cart'>
+                <a href='#' class='header-cart-icon'>Корзина</a>
+              </div>
+          </div>
 
 
       <div class='time-number'>
@@ -126,34 +105,34 @@
       <div class='popular clearfix' >
         <div class='popular-product'>
           <div class='product-img'>
-            <img src='img/1.png' alt='1' width='267' height='267'>
+            <img class='img' src='img/1.png' alt='1' width='267' height='267'>
+            <div class='hit'></div>
           </div>
-          <div class='hit'></div>
             <p class='product-price'>310 Р/кг</p>
             <a class='product-hit' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </div>
         <div class='popular-product'>
           <div class='product-img'>
-            <img src='img/2.png' alt='2' width='267' height='267'>
+            <img class='img' src='img/2.png' alt='2' width='267' height='267'>
+            <div class='hit'></div>
           </div>
-          <div class='hit'></div>
             <p class='product-price'>380 Р/кг</p>
             <a class='product-hit' href='#'>Сливочно-кофейное с кусочками шоколада</a>
         </div>
         <div class='popular-product'>
           <div class='product-img'>
-            <img src='img/3.png' alt='3' width='267' height='267'>
+            <img class='img' src='img/3.png' alt='3' width='267' height='267'>
+            <div class='hit'></div>
           </div>
-          <div class='hit'></div>
             <p class='product-price'>355 Р/кг</p>
             <a class='product-hit' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
         </div>
         <div class='popular-product'>
           <div class='product-img'>
-            <img src='img/4.png' alt='4' width='267' height='267'>
+            <img class='img' src='img/4.png' alt='4' width='267' height='267'>
+            <div class='hit'></div>
           </div>
-          <div class='hit'></div>
-            <p class='product-price'>415 Р/кг</p>
+             <p class='product-price'>415 Р/кг</p>
             <a class='product-hit' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
         </div>
       </div>
