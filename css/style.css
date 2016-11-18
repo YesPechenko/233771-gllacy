@@ -31,6 +31,9 @@ body > input[type='radio'] {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 27px;
+  padding-right: 27px;
+  box-sizing: border-box;
 }
 
 .catalog-wrapper {
@@ -45,7 +48,6 @@ body > input[type='radio'] {
   float: left;
   padding: 0;
   margin-top: 9px;
-  margin-left: 27px;
 }
 
 .header-menu {
@@ -194,24 +196,24 @@ body > input[type='radio'] {
 .header-right {
   position: relative;
   float: right;
+  padding-top: 8px;
   margin-top: 21px;
 }
 
 .header-search,
 .header-login,
 .header-cart {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
+  padding-bottom: 4px;
 }
 
 .header-search {
-  position: relative;
   vertical-align: middle;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
-  padding-bottom: 4px;
-  margin-top: 8px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -282,7 +284,6 @@ body > input[type='radio'] {
 }
 
 .header-login {
-  position: relative;
   display: inline-block;
   margin-left: 10px;
 }
@@ -338,12 +339,13 @@ body > input[type='radio'] {
   position: absolute;
   display: none;
   min-width: 277px;
-  top: 109%;
+  top: 100%;
   right: -10px;
   background-color: #f8f7f4;
   text-align: center;
   margin-right: 10px;
   border-radius: 5px;
+  z-index: 5;
 }
 
 #login {
@@ -442,7 +444,9 @@ body > input[type='radio'] {
 .header-login:hover .header-login-form {
   display: block;
 }
+.header-cart{
 
+}
 .header-cart-icon {
   display: inline-block;
   position: relative;
@@ -455,7 +459,6 @@ body > input[type='radio'] {
   padding-top: 8px;
   padding-bottom: 6px;
   padding-left: 8px;
-  margin-right: 27px;
   margin-left: 10px;
   border-radius: 50px;
   text-decoration: none;
@@ -508,7 +511,17 @@ body > input[type='radio'] {
   bottom: -58px;
   font-weight: 700;
 }
-
+.header-cart-form{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 539px;
+  background-color: #f8f7f4;
+  color: #323232;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
 .time {
   font-size: 14px;
   line-height: 16px;
@@ -652,7 +665,6 @@ body > input[type='radio'] {
 .present-raspberries {
   float: left;
   width: 560px;
-  margin-left: 27px;
   background: url('../img/crimson_background.png');
   background-repeat: no-repeat;
 }
@@ -713,7 +725,6 @@ body > input[type='radio'] {
 .present-chokolad {
   float: right;
   width: 560px;
-  margin-right: 26px;
   background-image: url('../img/chocolate_background.png');
   background-size: 560px 229px;
   background-repeat: no-repeat;
@@ -770,12 +781,6 @@ body > input[type='radio'] {
   background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.popular {
-  width: 1146px;
-  margin-left: 27px;
-  margin-right: 27px;
 }
 
 .popular-product {
@@ -840,16 +845,15 @@ body > input[type='radio'] {
 }
 
 .quality {
-  margin-left: 27px;
-  margin-right: 27px;
   margin-bottom: 40px;
-  border-radius: 13px;
+    color: #323232;
+}
+.quality-inner{
   background-image: url('../img/background_SEO.jpg');
   background-size: 1146px 306px;
   background-repeat: no-repeat;
-  color: #323232;
+  border-radius: 13px;
 }
-
 .quality-score {
   display: inline-block;
   font-size: 24px;
@@ -964,7 +968,6 @@ body > input[type='radio'] {
   padding-left: 20px;
   padding-right: 30px;
   padding-bottom: 22px;
-  margin-left: 27px;
   background: url('../img/strawberry_background.png');
   background-size: 560px 229px;
   background-repeat: no-repeat;
@@ -1005,7 +1008,6 @@ body > input[type='radio'] {
   min-height: 228px;
   padding-left: 27px;
   padding-right: 25px;
-  margin-right: 27px;
   background-image: url('../img/the_mail_background.png');
   background-size: 560px 229px;
   background-repeat: no-repeat;
@@ -1094,6 +1096,7 @@ body > input[type='radio'] {
 
 .contact {
   position: absolute;
+  right: 27px;
   width: 303px;
   height: 305px;
   font-size: 14px;
@@ -1588,7 +1591,6 @@ body > input[type='radio'] {
 .footer-social {
   display: inline-block;
   width: 186px;
-  margin-left: 27px;
   margin-right: 214px;
   font-size: 0;
   text-decoration: none;
@@ -1608,6 +1610,8 @@ body > input[type='radio'] {
 .footer-social-btn.twitter:active::after {
   content: '';
   position: absolute;
+  width: 31px;
+  height: 31px;
   background-image: url(../img/twitter.svg);
   background-repeat: no-repeat;
   opacity: 0.8;
