@@ -50,8 +50,8 @@
 
             <div class='header-login-form'>
               <form class='login-form' action='#' method='post'>
-                <input type='text' name='login' id='login' placeholder='Электонная почта'>
-                <input type='text' name='password' id='password' placeholder='Пароль'>
+                <input class='login' type='text' name='login' id='login' placeholder='Электонная почта'>
+                <input class='password' type='text' name='password' id='password' placeholder='Пароль'>
                 <button class='login-btn' type='submit'>Войти</button>
                 <div class='password-registration'>
                   <a class='forgot-password' href='#'>Забыли пароль?</a>
@@ -104,8 +104,8 @@
 
       <div class='breadcrumbs container clearfix'>
         <ul>
-          <li><a class='breadcrumbs-home' href='#home'>Главная</a></li>
-          <li><a class='breadcrumbs-catalog' href='#catalog'>Каталог</a></li>
+          <li><a class='breadcrumbs-home' href='index.html'>Главная</a></li>
+          <li><a class='breadcrumbs-catalog' href='catalog.html'>Каталог</a></li>
           <li>Сливочное</li>
         </ul>
       </div>
@@ -159,11 +159,16 @@
               <span>Наполнитель:</span>
 
               <div class='filler'>
-                <input type='checkbox' name='filler' value='chocolate'> шоколадные
-                <input type='checkbox' name='filler' value='sugar'> сахарные присыпки
-                <input type='checkbox' name='filler' value='fruit'> фрукты
-                <input type='checkbox' name='filler' value='syrup'> сиропы
-                <input type='checkbox' name='filler' value='jam'> джемы
+                <input type='checkbox' name='filler' value='chocolate' id='chocolate'>
+                <label for='chocolate'>шоколадные</label>
+                <input type='checkbox' name='filler' value='sugar' id='sugar'>
+                <label for='sugar'>сахарные присыпки</label>
+                <input type='checkbox' name='filler' value='fruit' id='fruit'>
+                <label for='fruit'>фрукты</label>
+                <input type='checkbox' name='filler' value='syrup' id='syrup'>
+                <label for='syrup'>сиропы</label>
+                <input type='checkbox' name='filler' value='jam' id='jam'>
+                <label for='jam'>джемы</label>
               </div>
             </div>
 
@@ -173,102 +178,138 @@
         </form>
       </div>
 
-      <div class='popular container clearfix'>
+      <div class='catalog container clearfix'>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/1.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>310₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <a class='product-title' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/2.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>380₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочно-кофейное с кусочками шоколада</a>
+          <a class='product-title' href='#'>Сливочно-кофейное с кусочками шоколада</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/3.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>355₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <a class='product-title' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/4.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>415₽<span>/кг</span></span>
-          <a a class='product-hit' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
+          <a a class='product-title' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/1_2.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>325₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочное с брусничным джемом</a>
+          <a class='product-title' href='#'>Сливочное с брусничным джемом</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/2_2.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>410₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочно-черничное с цельными ягодами черники</a>
+          <a class='product-title' href='#'>Сливочно-черничное с цельными ягодами черники</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/3_2.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>375₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочно-лимонное с карамельной присыпкой</a>
+          <a class='product-title' href='#'>Сливочно-лимонное с карамельной присыпкой</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/4_2.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>320₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочное с шоколадной стружкой</a>
+          <a class='product-title' href='#'>Сливочное с шоколадной стружкой</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/1_3.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>440₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочно-ванильное с кусочками шоколада</a>
+          <a class='product-title' href='#'>Сливочно-ванильное с кусочками шоколада</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/2_3.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>435₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочное с ментоловым сиропом</a>
+          <a class='product-title' href='#'>Сливочное с ментоловым сиропом</a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/3_3.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>355₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочное с кусочками черного шоколада </a>
+          <a class='product-title' href='#'>Сливочное с кусочками черного шоколада </a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
-        <div class='popular-product'>
+        <div class='catalog-product'>
           <div class='product-img'>
             <img src='img/4_3.png' alt='1' width='267' height='267'>
           </div>
           <span class='product-price'>420₽<span>/кг</span></span>
-          <a class='product-hit' href='#'>Сливочное с мятным сиропом </a>
+          <a class='product-title' href='#'>Сливочное с мятным сиропом </a>
+          <div class='additional'>
+            <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+          </div>
         </div>
 
       </div>
@@ -300,10 +341,10 @@
             <a class='providers' href='#'>Для поставщиков</a>
           </li>
           <li class=''>
-            <a class='manufacturing' href='#'>О производстве</a>
+            <a class='our-documents' href='#'>Наши документы</a>
           </li>
           <li class=''>
-            <a class='our-documents' href='#'>Наши документы</a>
+            <a class='manufacturing' href='#'>О производстве</a>
           </li>
           <li class=''>
             <a class='ecology-standards' href='#'>Экологические стандарты</a>

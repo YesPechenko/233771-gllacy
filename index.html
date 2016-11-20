@@ -28,7 +28,7 @@
                 <a class='sub-menu-link' href='#'>Новинки</a>
               </li>
               <li class='sub-menu-item'>
-                <a class='sub-menu-link' href='#'>Сливочное</a>
+                <a class='sub-menu-link' href='catalog.html'>Сливочное</a>
               </li>
               <li class='sub-menu-item'>
                 <a class='sub-menu-link' href='#'>Щербеты</a>
@@ -61,8 +61,8 @@
           <a href='#' class='header-login-icon'>Вход</a>
           <div class='header-login-form'>
             <form class='login-form' action='#' method='post'>
-              <input type='text' name='login' id='login' placeholder='Электонная почта'>
-              <input type='text' name='password' id='password' placeholder='Пароль'>
+              <input class='login' type='text' name='login' id='login' placeholder='Электонная почта'>
+              <input class='password' type='text' name='password' id='password' placeholder='Пароль'>
               <button class='login-btn' type='submit'>Войти</button>
               <div class='password-registration'>
                 <a class='forgot-password' href='#'>Забыли пароль?</a>
@@ -131,44 +131,56 @@
 
     </div>
 
-    <div class='popular container clearfix'>
-      <div class='popular-product'>
+    <div class='catalog container clearfix'>
+      <div class='catalog-product'>
         <div class='product-img'>
           <img class='img' src='img/1.png' alt='1' width='267' height='267'>
           <div class='hit'></div>
         </div>
         <span class='product-price'>310₽<span>/кг</span></span>
-        <a class='product-hit' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <a class='product-title' href='#'>Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        <div class='additional'>
+          <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+        </div>
       </div>
-      <div class='popular-product'>
+      <div class='catalog-product'>
         <div class='product-img'>
           <img class='img' src='img/2.png' alt='2' width='267' height='267'>
           <div class='hit'></div>
         </div>
         <span class='product-price'>380₽<span>/кг</span></span>
-        <a class='product-hit' href='#'>Сливочно-кофейное с кусочками шоколада</a>
+        <a class='product-title' href='#'>Сливочно-кофейное с кусочками шоколада</a>
+        <div class='additional'>
+          <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+        </div>
       </div>
-      <div class='popular-product'>
+      <div class='catalog-product'>
         <div class='product-img'>
           <img class='img' src='img/3.png' alt='3' width='267' height='267'>
           <div class='hit'></div>
         </div>
         <span class='product-price'>355₽<span>/кг</span></span>
-        <a class='product-hit' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <a class='product-title' href='#'>Сливочно-клубничное с присыпкой из белого шоколада</a>
+        <div class='additional'>
+          <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+        </div>
       </div>
-      <div class='popular-product'>
+      <div class='catalog-product'>
         <div class='product-img'>
           <img class='img' src='img/4.png' alt='4' width='267' height='267'>
           <div class='hit'></div>
         </div>
         <span class='product-price'>415₽<span>/кг</span></span>
-        <a class='product-hit' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
+        <a class='product-title' href='#'>Сливочное крем-брюле с карамельной подливкой</a>
+        <div class='additional'>
+          <a class='btn catalog-btn' href='#'>Быстрый просмотр</a>
+        </div>
       </div>
     </div>
 
     <div class='quality container'>
       <div class='quality-inner clearfix'>
-        <div class='quality-score'>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного
+        <div class='quality-score'>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного
           производства на развес</div>
         <div class='score-left'>
           <div class='left-top'>Все наше мороженое изготавливается на собственном производстве, с использованием
@@ -205,7 +217,7 @@
           </div>
 
           <div class='text-submit'>
-            <input type='text' name='Электронная почта' class="email" id='email' placeholder='Электонная почта'>
+            <input type='text' name='Электронная почта' class='email' id='email' placeholder='Электонная почта'>
             <button class='send' type='submit'>Отправить</button>
           </div>
 
@@ -214,7 +226,6 @@
 
     </div>
 
-    <!--- карта, адрес---->
     <div class='map-wrap container clearfix'>
 
       <div class='ice'>
@@ -223,7 +234,7 @@
 
       <div class='contact clearfix'>
 
-        <section class="contacts-office">
+        <section class='contacts-office'>
           <span>Адрес главного офиса и офлайн магазина:</span>
           <span class='contacts-address'>ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
           <span>Для заказов по телефону:</span>
@@ -237,19 +248,17 @@
           <button class='feedback-form-close' type='button' title='Закрыть'>Закрыть</button>
           <input type='text' name='Имя' id='name-form' placeholder='Как вас зовут?'>
           <input type='text' name='Электронная почта' id='email-form' placeholder='Ваша почта для ответа?'>
-          <input type='text' name='Поле ввода' id='entry-field-form' placeholder='Напишите что-нибудь...'>
+          <input class='entry-field-form' type='text' name='Поле ввода' id='entry-field-form' placeholder='Напишите что-нибудь...'>
           <button class='send' type='submit'>Отправить</button>
         </div>
 
-        <div class="shadow"></div>
+        <div class='shadow'></div>
 
       </div>
 
 
     </div>
 
-
-    <!------подвал--->
     <div class='footer container clearfix'>
 
       <section class='footer-social'>
@@ -264,10 +273,10 @@
           <a class='providers' href='#'>Для поставщиков</a>
         </li>
         <li class=''>
-          <a class='manufacturing' href='#'>О производстве</a>
+          <a class='our-documents' href='#'>Наши документы</a>
         </li>
         <li class=''>
-          <a class='our-documents' href='#'>Наши документы</a>
+          <a class='manufacturing' href='#'>О производстве</a>
         </li>
         <li class=''>
           <a class='ecology-standards' href='#'>Экологические стандарты</a>
