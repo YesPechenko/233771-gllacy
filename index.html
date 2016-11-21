@@ -246,12 +246,19 @@
         <div class='feedback-form'>
           <span>Мы обязательно вам ответим!</span>
           <button class='feedback-form-close' type='button' title='Закрыть'>Закрыть</button>
-          <input type='text' name='Имя' id='name-form' placeholder='Как вас зовут?'>
-          <input type='text' name='Электронная почта' id='email-form' placeholder='Ваша почта для ответа?'>
-          <textarea id="modal_text" name="text" cols="30" rows="5" placeholder="Напишите что нибудь..."></textarea>
-          <button class='send' type='submit'>Отправить</button>
+          <form class='feedback-field' action='#' method='post'>
+            <div class='control'>
+              <input type='text' name='Имя' id='name-form' placeholder='Как вас зовут?'>
+            </div>
+            <div class='control'>
+              <input type='text' name='Электронная почта' id='email-form' placeholder='Ваша почта для ответа?'>
+            </div>
+            <div class='control'>
+              <textarea name='text' cols='30' rows='5' id='modal-text' placeholder="Напишите что нибудь..."></textarea>
+            </div>
+            <button class='send' type='submit'>Отправить</button>
+          </form>
         </div>
-
         <div class='shadow'></div>
 
       </div>

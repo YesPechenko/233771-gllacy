@@ -1523,8 +1523,10 @@ body > input[type='radio'] {
 .feedback-form-close::after {
     transform: rotate(-45deg);
 }
-
-.feedback-form input[type='text'] {
+.control {
+    position: relative;
+}
+.control input[type='text']{
     width: 267px;
     font-size: 16px;
     padding-left: 13px;
@@ -1537,7 +1539,9 @@ body > input[type='radio'] {
     color: #656565;
     font-family: 'Roboto', sans-serif;
 }
-
+.feedback-form input:hover{
+    border: 1px solid #d7d6d5;
+}
 .feedback-form textarea{
     width: 428px;
     min-height: 44px;
@@ -1550,12 +1554,15 @@ body > input[type='radio'] {
     color: #656565;
     border: 1px solid #eeeeec;
 }
+.feedback-form textarea:hover{
+   border: 1px solid #d7d6d5;
+}
 
 .feedback-form .send {
     float: right;
     width: 141px;
-    margin-right: 23px;
-    margin-top: 5px;
+    margin-right: 24px;
+    margin-top: 25px;
     margin-bottom: 24px;
 }
 
