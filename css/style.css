@@ -2148,14 +2148,14 @@ body > input[type='radio']
   display: block;
 
   padding-bottom: 5px;
-  padding-left: 11px;
+  padding-left: 16px;
 }
 .panel-sorting-title
 {
   display: block;
 
   padding-bottom: 6px;
-  padding-left: 16px;
+  padding-left: 21px;
 }
 select
 {
@@ -2339,13 +2339,13 @@ input[type='radio']
 .fatness-percent label::before
 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -3px;
+  left: 1px;
 
   display: block;
 
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
 
   content: '';
 
@@ -2354,6 +2354,8 @@ input[type='radio']
 }
 .fatness-percent label:hover::before
 {
+  width: 19px;
+  height: 19px;
   border: 2px solid #f8f7f4;
 }
 .fatness-percent label:disabled
@@ -2363,8 +2365,8 @@ input[type='radio']
 .fatness-percent input[type='radio']:checked + label::after
 {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 2px;
+  left: 6px;
 
   width: 12px;
   height: 12px;
@@ -2433,8 +2435,8 @@ input[type='radio']
 .filler label::before
 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1px;
+  left: -1px;
 
   display: block;
 
@@ -2442,34 +2444,20 @@ input[type='radio']
   height: 20px;
 
   content: '';
-
-  border: 1px solid #f8f7f4;
-  border-radius: 5px;
+  background-image: url('../img/chekbox-off.png');
+  background-repeat: no-repeat;
 }
 .filler label:hover::before
 {
-  border: 2px solid #f8f7f4;
+  background-image: url('../img/checkb-hov.png');
 }
 .filler label:disabled
 {
   border: 1px solid #b2c1b7;
 }
-.filler input[type='checkbox']:checked + label::after
+.filler input[type='checkbox']:checked + label::before
 {
-  position: absolute;
-  top: 4px;
-  left: 4px;
-
-  width: 11px;
-  height: 11px;
-
-  content: '';
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-
-  border-bottom: 2px solid #f8f7f4;
-  border-left: 2px solid #f8f7f4;
+  background-image: url('../img/checked-hov.png');
 }
 
 .filler input[type='checkbox']
